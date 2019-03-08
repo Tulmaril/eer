@@ -1,0 +1,51 @@
+//
+// Breakpoints
+//
+
+@mixin respond-to($breakpoint)
+	@if $breakpoint == "mobile-only"
+		@media (max-width: 767px)
+			@content
+
+	@if $breakpoint == "mobile-up"
+		@media (min-width: 320px)
+			@content
+
+	@else if $breakpoint == "tablet-only"
+		@media (min-width: 768px) and (max-width: 1199px)
+			@content
+
+	@else if $breakpoint == "tablet-up"
+		@media (min-width: 768px)
+			@content
+
+	@else if $breakpoint == "small-tablet"
+		@media (min-width: 768px) and (max-width: 1023px)
+			@content
+
+	@else if $breakpoint == "desktop-up"
+		@media (min-width: 1170px)
+			@content
+
+	@else if $breakpoint == "desktop-large-up"
+		@media (min-width: 1440px)
+			@content
+
+//
+// Placeholder
+//
+
+@mixin placeholder
+	::-webkit-input-placeholder
+		@content
+	:-moz-placeholder
+		@content
+	::-moz-placeholder
+		@content
+	:-ms-input-placeholder
+		@content
+
+// Converting Photoshop Letter Spacing to CSS
+
+@function setLetterSpacing($num)
+	@return ($num / 1000) + em

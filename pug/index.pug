@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+|    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=EmulateIE10")
+        title Document
+        link(rel="stylesheet", href="css/style.css")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+    body
+        video(muted, loop, class="video").bg__video
+            source(src="", type="video/mp4")
+        img(src='img/default.png').bg__img
+        .header
+            a(href="#").header__logo-link
+                img(src="img/logo.png").header__logo-pic
+            .header__slogan choose your pleasure plan
+            .menu
+                .menu__lang.menu__button en
+                    img.menu__lang-img(src="img/gb.png")
+                a(href="#").menu__login.menu__button login
+                a(href="#").menu__join.menu__button join now
+        ul.card__list
+            li(data-src='anni_00').card__item
+                .card__count 1
+                    svg.card__icon.svg-symbol-12-dims
+                        use(xlink:href="./img/sprite/sprite.defs.svg#symbol-12")
+                .card__period.desktopshow months
+                .card__period.mobileshow year
+                .card__price 12.99/mo
+                button.card__join Join Now
+            li(data-src='anni_70').card__item
+                .card__count 3
+                    svg.card__icon.svg-symbol-3-dims
+                        use(xlink:href="./img/sprite/sprite.defs.svg#symbol-3")
+                .card__period months
+                .card__price 22.99/mo
+                button.card__join Join Now
+            li(data-src='anni_80').card__item
+                .card__count 1
+                    svg.card__icon.svg-symbol-1-dims
+                        use(xlink:href="./img/sprite/sprite.defs.svg#symbol-1")
+                .card__period month
+                .card__price 32.99/mo
+                button.card__join Join Now
+            li(data-src='anni_90').card__item
+                .card__count 3
+                    svg.card__icon.svg-symbol-3-dims
+                        use(xlink:href="./img/sprite/sprite.defs.svg#symbol-3")
+                .card__period day
+                .card__price 1 Dollar
+                button.card__join Join Now
+        ul.footer__list
+            li.footer__item 701 models
+                svg.footer__icon.svg-bra-dims
+                    use(xlink:href="./img/sprite/sprite.defs.svg#bra")
+            li.footer__item 2500+ Videos
+                svg.footer__icon.svg-video-meeting-circle-dims
+                    use(xlink:href="./img/sprite/sprite.defs.svg#video-meeting-circle")
+            li.footer__item 59925 Pictures
+                svg.footer__icon.svg-camera-dims
+                    use(xlink:href="./img/sprite/sprite.defs.svg#camera")
+            li.footer__item 16 Niche Sites
+                svg.footer__icon.svg-programming-website-dims
+                    use(xlink:href="./img/sprite/sprite.defs.svg#programming-website")
+            li.footer__item 4.16 Tb Archive
+                svg.footer__icon.svg-folder-video-dims
+                    use(xlink:href="./img/sprite/sprite.defs.svg#folder-video")
+            li.footer__item 24/7 Support
+                svg.footer__icon.svg-headphone-dims
+                    use(xlink:href="./img/sprite/sprite.defs.svg#headphone")
+
+    // Scripts
+
+    script(src="js/main.js")
+    script(src="js/svg4everybody.js")

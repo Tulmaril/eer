@@ -1,0 +1,98 @@
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1255px)
+	html
+		overflow: auto
+		height: auto
+	body
+		overflow: auto
+		height: auto
+		padding-top: 3rem
+	.bg
+		&__video
+			z-index: 0!important
+		&__img
+			z-index: -1
+	.header
+		padding: 0 20px 0 60px
+		&__slogan
+			top: 90px
+			white-space: nowrap
+	.menu
+		&__button
+			display: flex
+			height: 3rem
+			background: #b0394e
+			border-radius: 5px
+			margin-left: 8px
+			justify-content: center
+			align-items: center
+			padding: 0 10px
+			font-size: 1.5rem
+		&__login
+			color: transparent
+			height: 3rem
+			width: 3rem
+			background: #b0394e url("../img/key.png") center center no-repeat
+			border-radius: 5px
+			&:hover
+				font-size: 0
+		&__lang
+			height: 3rem
+			width: 3rem
+			color: #ffccd5
+			margin-right: 0
+			&::before
+				display: none
+		&__lang-img
+			display: none
+	.card
+		&__list
+          flex-wrap: wrap
+          width: 70%
+          margin: 0 auto
+          position: relative
+          top: auto
+          left: auto
+          transform: none
+          padding-top: 5rem
+          height: 100%
+          padding-bottom: 13rem
+		&__item
+          padding-bottom: 110px
+          width: 50%
+          &:nth-child(3)
+              order: 2
+          &:nth-child(4)
+              order: 1
+		&__count
+			color: #fff
+			font-size: 12.5rem
+			&::before
+				display: none
+		&__icon
+			display: none
+		&__period
+			font-size: 5rem
+	.footer
+		&__list
+			padding: 3rem 0
+			background: rgba(104, 28, 41, 0.5)
+			bottom: 0
+			flex-wrap: wrap
+			flex-direction: column
+			height: 11rem
+			align-content: space-evenly
+
+	.desktopshow
+		display: none
+	.mobileshow
+		display: block
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 860px)
+	html
+      font-size: 12px
