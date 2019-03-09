@@ -403,7 +403,7 @@ button {
     height: auto;
   }
   body {
-    overflow: auto;
+    overflow: hidden;
     height: auto;
     padding-top: 3rem;
   }
@@ -414,10 +414,10 @@ button {
     z-index: -1;
   }
   .header {
-    padding: 0 20px 0 60px;
+    padding: 0 1rem 0 4rem;
   }
   .header__slogan {
-    top: 90px;
+    top: 5rem;
     white-space: nowrap;
   }
   .menu__button {
@@ -538,5 +538,19 @@ button {
 @media only screen and (max-width: 860px) {
   html {
     font-size: 12px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 6px;
+  }
+  .menu__login {
+    -webkit-background-size: 1rem 1rem;
+            background-size: 1rem;
+  }
+  .header__slogan {
+    top: 9rem;
   }
 }

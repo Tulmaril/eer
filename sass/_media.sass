@@ -7,7 +7,7 @@
 		overflow: auto
 		height: auto
 	body
-		overflow: auto
+		overflow: hidden
 		height: auto
 		padding-top: 3rem
 	.bg
@@ -16,9 +16,9 @@
 		&__img
 			z-index: -1
 	.header
-		padding: 0 20px 0 60px
+		padding: 0 1rem 0 4rem
 		&__slogan
-			top: 90px
+			top: 5rem
 			white-space: nowrap
 	.menu
 		&__button
@@ -96,3 +96,16 @@
 @media only screen and (max-width : 860px)
 	html
       font-size: 12px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 700px)
+	html
+      font-size: 6px
+	.menu
+		&__login
+			background-size: 1rem
+	.header
+		&__slogan
+			top: 9rem
+
